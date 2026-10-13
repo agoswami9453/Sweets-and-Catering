@@ -1,5 +1,5 @@
-const API_BASE = "http://localhost:4000";
-const ADMIN_KEY = "";
+const API_BASE = "https://raghav-sweets-backend.onrender.com";
+const ADMIN_KEY = "RaghavAdmin2026@SecureKey";
 let salesChart = null;
 let allOrders = [];
 

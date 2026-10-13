@@ -23,7 +23,7 @@ async function generateInvoice(order) {
   const qrPath = path.join(invoicesDir, `${order.id}-qr.png`);
 
   const BASE_URL =
-    process.env.BASE_URL || "http://localhost:5500";
+    process.env.BASE_URL || "https://raghav-sweets-and-catering.onrender.com";
 
   const qrData = `${BASE_URL}/verify.html?id=${order.id}`;
 
@@ -278,7 +278,7 @@ async function generateInvoice(order) {
     .font("Helvetica-Bold")
     .fontSize(24)
     .fillColor(primary)
-    .text("SWEETS AND CATERING", {
+    .text("RAGHAV SWEETS & CATERING", {
       align: "center",
     });
 
@@ -298,8 +298,9 @@ async function generateInvoice(order) {
     align: "center",
   });
 
-  if (process.env.UPI_ID)
-    doc.text(`UPI : ${process.env.UPI_ID}`, { align: "center" });
+  doc.text("UPI : raghavdevansh08@okicici", {
+    align: "center",
+  });
 
   doc.text("Phone : +91-XXXXXXXXXX", {
     align: "center",
@@ -789,7 +790,7 @@ async function generateInvoice(order) {
     .font("Helvetica")
     .fontSize(11)
     .fillColor(gray)
-    .text("Thank you for choosing Sweets and Catering.", {
+    .text("Thank you for choosing Raghav Sweets & Catering.", {
       align: "center",
     });
 
@@ -829,7 +830,7 @@ async function generateInvoice(order) {
     "• UPI payments are subject to successful verification.",
     "• Delivery times may vary depending on location and order volume.",
     "• Catering orders should be confirmed in advance.",
-    "• For any queries, please contact Sweets and Catering.",
+    "• For any queries, please contact Raghav Sweets & Catering.",
   ];
 
   let y = termsTop + 15;
@@ -884,12 +885,13 @@ async function generateInvoice(order) {
     .font("Helvetica")
     .fontSize(9)
     .fillColor(gray)
-    .text("Sweets and Catering | Mathura, Uttar Pradesh", {
+    .text("Raghav Sweets & Catering | Mathura, Uttar Pradesh", {
       align: "center",
     });
 
-  if (process.env.UPI_ID)
-    doc.text(`UPI : ${process.env.UPI_ID}`, { align: "center" });
+  doc.text("UPI : raghavdevansh08@okicici", {
+    align: "center",
+  });
 
   doc.text("Premium Indian Sweets • Namkeen • Catering", {
     align: "center",
