@@ -278,7 +278,7 @@ async function generateInvoice(order) {
     .font("Helvetica-Bold")
     .fontSize(24)
     .fillColor(primary)
-    .text("RAGHAV SWEETS & CATERING", {
+    .text("GOSWAMI SWEETS & CATERING", {
       align: "center",
     });
 
@@ -790,7 +790,7 @@ async function generateInvoice(order) {
     .font("Helvetica")
     .fontSize(11)
     .fillColor(gray)
-    .text("Thank you for choosing Raghav Sweets & Catering.", {
+    .text("Thank you for choosing Goswami Sweets & Catering.", {
       align: "center",
     });
 
@@ -830,7 +830,7 @@ async function generateInvoice(order) {
     "• UPI payments are subject to successful verification.",
     "• Delivery times may vary depending on location and order volume.",
     "• Catering orders should be confirmed in advance.",
-    "• For any queries, please contact Raghav Sweets & Catering.",
+    "• For any queries, please contact Goswami Sweets & Catering.",
   ];
 
   let y = termsTop + 15;
@@ -885,7 +885,7 @@ async function generateInvoice(order) {
     .font("Helvetica")
     .fontSize(9)
     .fillColor(gray)
-    .text("Raghav Sweets & Catering | Mathura, Uttar Pradesh", {
+    .text("Goswami Sweets & Catering | Mathura, Uttar Pradesh", {
       align: "center",
     });
 

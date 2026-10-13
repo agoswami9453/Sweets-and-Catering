@@ -181,7 +181,7 @@ async function checkout(e) {
   } catch (error) {
     const message =
       error instanceof TypeError && /fetch/i.test(error.message)
-        ? "Backend connection failed. Start the server on https://raghav-sweets-backend.onrender.com and confirm /api/health opens successfully."
+        ? "Backend connection failed. Start the configured backend server and confirm /api/health opens successfully."
         : error.message || "Unable to create order.";
     setCheckoutStatus(message, true);
     payButton.disabled = false;
@@ -215,7 +215,7 @@ async function confirmUpiPayment() {
   } catch (error) {
     const message =
       error instanceof TypeError && /fetch/i.test(error.message)
-        ? "Backend connection failed. Start the server on https://raghav-sweets-backend.onrender.com and try again."
+        ? "Backend connection failed. Start the configured backend server and try again."
         : error.message || "Unable to submit payment details.";
     setCheckoutStatus(message, true);
     button.disabled = false;

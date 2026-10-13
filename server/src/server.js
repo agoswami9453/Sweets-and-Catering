@@ -21,7 +21,7 @@ const configuredOrigins = (
   .filter(Boolean);
 const upiId = process.env.UPI_ID || "raghavdevansh08@okicici";
 const upiPayeeName =
-  process.env.UPI_PAYEE_NAME || "Raghav Sweets and Catering and Namkeen";
+  process.env.UPI_PAYEE_NAME || "Goswami Sweets and Catering and Namkeen";
 
 app.use(helmet({ crossOriginResourcePolicy: false }));
 app.use(
@@ -378,7 +378,7 @@ function buildUpiUri({ amount, orderId }) {
     pn: upiPayeeName,
     am: amount.toFixed(2),
     cu: "INR",
-    tn: `Raghav Sweets and Catering order ${orderId}`,
+    tn: `Goswami Sweets and Catering order ${orderId}`,
     tr: orderId,
   });
   return `upi://pay?${params.toString()}`;
@@ -387,6 +387,6 @@ function buildUpiUri({ amount, orderId }) {
 await initDb();
 app.listen(port, () =>
   console.log(
-    `Raghav Sweets and Catering UPI backend running at http://localhost:${port}`,
+    `Goswami Sweets and Catering UPI backend running at http://localhost:${port}`,
   ),
 );

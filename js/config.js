@@ -1,5 +1,5 @@
 window.STORE_CONFIG = {
-  name: "Raghav Sweets and Catering",
+  name: "Goswami Sweets and Catering",
   phone: "918279500000",
   displayPhone: "+91 8279500000",
   apiBaseUrl: "https://raghav-sweets-backend.onrender.com",
